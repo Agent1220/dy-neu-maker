@@ -1,3 +1,4 @@
+
 var BlobBuilder = Blob;
 var browser = getBrowser();
 var windowWidth = 1920;
@@ -666,3 +667,18 @@ var main = function () {
 var w = window;
 requestAnimationFrame = w.requestAnimationFrame || w.webkitRequestAnimationFrame || w.msRequestAnimationFrame || w.mozRequestAnimationFrame;
 main();
+
+
+
+
+
+
+//NEU
+
+//DO NOT DELETE!!!!!!!!!!!!!!!!!!!!!!!!!
+function onWindowClose() {
+    Neutralino.app.exit();
+}
+
+Neutralino.init();
+Neutralino.events.on("windowClose", onWindowClose);
